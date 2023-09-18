@@ -1,21 +1,16 @@
 package com.example.harta23try
 import android.Manifest
 import android.bluetooth.BluetoothAdapter
-import android.bluetooth.BluetoothClass.Device
-import android.bluetooth.BluetoothDevice
 import android.bluetooth.le.ScanCallback
 import android.bluetooth.le.ScanFilter
 import android.bluetooth.le.ScanResult
 import android.bluetooth.le.ScanSettings
-import android.content.ContentValues.TAG
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ListView
 import androidx.core.app.ActivityCompat
-import com.example.harta23try.MainActivity
-import com.example.harta23try.R
 
 class DeviceListActivity : AppCompatActivity() {
     private val leDeviceListAdapter = MainActivity.LeDeviceListAdapter()

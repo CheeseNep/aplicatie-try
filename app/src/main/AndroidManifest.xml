@@ -27,7 +27,7 @@
             android:value="@string/google_map_api_key"/>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".`MainActivity.txt`"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

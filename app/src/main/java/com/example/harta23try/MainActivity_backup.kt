@@ -1,14 +1,9 @@
 package com.example.harta23try
 
-import com.example.harta23try.DeviceListActivity
 import android.Manifest
-import com.example.harta23try.SampleGattAttributes
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Service
 import android.bluetooth.BluetoothAdapter
-import android.bluetooth.BluetoothAdapter.STATE_DISCONNECTED
-import android.bluetooth.BluetoothClass
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothGatt
 import android.bluetooth.BluetoothGattCallback
@@ -16,12 +11,9 @@ import android.bluetooth.BluetoothGattCharacteristic
 import android.bluetooth.BluetoothGattDescriptor
 import android.bluetooth.BluetoothGattService
 import android.bluetooth.BluetoothProfile
-import android.bluetooth.le.BluetoothLeScanner
 import android.bluetooth.le.ScanCallback
-import android.bluetooth.le.ScanResult
 import android.content.BroadcastReceiver
 import android.content.ComponentName
-import android.content.ContentValues
 import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
@@ -47,19 +39,16 @@ import androidx.appcompat.app.AppCompatActivity
 
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.harta23try.MainActivity.BluetoothService.Companion.ACTION_DATA_AVAILABLE
+import com.example.harta23try.`MainActivity`.BluetoothService.Companion.ACTION_DATA_AVAILABLE
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import java.util.UUID
-import java.util.Vector
-import kotlin.random.Random
 
 ///  data 8 /14 /23 lucrez doar pe mapa
 
